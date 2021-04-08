@@ -24,7 +24,7 @@ namespace Capston_Project
             //might set up for now just store that data
 
         }
-        /* static void ViewFile()
+        static void ViewFile()
          {
              var fileToOpen = "SomeFilePathHere";
              var process = new Process("notepad.exe");
@@ -38,7 +38,7 @@ namespace Capston_Project
              process.WaitForExit();
          }
 
-         static void ReadFiles()
+         /*static void ReadFiles()
          {
              int counter = 0;
              string line;
@@ -57,11 +57,17 @@ namespace Capston_Project
          // Suspend the screen.  
          System.Console.ReadLine();
      }*/
-        /* public static void encryption()
+         public static void encryption()
          {
-
+            var filetoopen = "SomeFilePathHere";
+            while (filetoopen != endoffile)
+            {
+                ReadFiles(filetoopen);
+                foreach (char)
+                {
+                    "A" = 0; "a" = 1;
+                }
+            }
          }
-         */
-
     }
 }
