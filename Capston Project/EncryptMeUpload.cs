@@ -22,11 +22,10 @@ namespace Capston_Project
             //find the file
 
             //read to end of file
-           // string[] plaintext = System.IO.File.ReadAllLines();
+            Program.ReadFiles();
+            // string[] plaintext = System.IO.File.ReadAllLines();
             //pass to encrypt 
-            //encryption;
-            //create new encrypted file
-           // string[] Encryptedtext = System
+            Program.encryption();
             EncryptLogIn encryptLogIn = new EncryptLogIn();
             encryptLogIn.ShowDialog();
             this.Close();
