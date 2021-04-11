@@ -23,7 +23,6 @@ namespace Capston_Project
 
             //read to end of file
             Program.ReadFiles();
-            // string[] plaintext = System.IO.File.ReadAllLines();
             //pass to encrypt 
             Program.encryption();
             EncryptLogIn encryptLogIn = new EncryptLogIn();

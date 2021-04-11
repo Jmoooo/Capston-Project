@@ -18,13 +18,15 @@ namespace Capston_Project
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new EncryptLogIn());
         }
-        static class UserNamesAndPasswords
+        public static void UserNamesAndPasswords()
         {
             //Set to get username and passwords 
             //get from text box on log in and compare to hash
             //hash will be stored in text file on hard drive for demo
             //might set up for now just store that data
-            readonly(UserPasswordTextBox);
+            //readonly(UserPasswordTextBox);
+            var FileToCreate = ; //Save file location for updated and edits
+            
 
         }
         public static void ViewFile()
@@ -48,7 +50,7 @@ namespace Capston_Project
 
              // Read the file and display it line by line.  
              System.IO.StreamReader file =/*file from upload or download*/
-        // new System.IO.StreamReader(/*file from upload or download);
+                new System.IO.StreamReader(/*file from upload or download*/);
          while ((line = file.ReadLine()) != null)
          {
              System.Console.WriteLine(line);

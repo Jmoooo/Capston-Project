@@ -20,15 +20,12 @@ namespace Capston_Project
 
         private void CreatUserIdsButton_Click(object sender, EventArgs e)
         {
+            String createUserName = CreateUserName.Text;
+            String CreateUserPasswordFirst = CreatePasswordFirst.Text;
+            String CreateUserPasswordSecond = CreatePasswordSecond.Text;
 
+            Program.UserNamesAndPasswords(createUserName,CreateUserPasswordFirst,CreateUserPasswordSecond);
         }
-
-
-
-
-
-
-
         private void ExitButton_Click(object sender, EventArgs e)
         {
             this.Close();

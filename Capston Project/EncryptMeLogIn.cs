@@ -63,6 +63,7 @@ namespace Capston_Project
         {
             SignUp signUp = new SignUp();
             signUp.ShowDialog();
+
         }
         private void ExitButton_Click(object sender, EventArgs e)
         {
