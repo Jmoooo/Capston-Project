@@ -70,6 +70,7 @@
     <Compile Include="LogInError.Designer.cs">
       <DependentUpon>LogInError.cs</DependentUpon>
     </Compile>
+    <Compile Include="Microsoft\Win32\FileDialog.cs" />
     <Compile Include="PopUpLogInFailed.cs">
       <SubType>Form</SubType>
     </Compile>

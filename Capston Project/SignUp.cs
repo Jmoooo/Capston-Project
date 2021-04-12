@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace Capston_Project
 {
@@ -24,11 +26,14 @@ namespace Capston_Project
             String CreateUserPasswordFirst = CreatePasswordFirst.Text;
             String CreateUserPasswordSecond = CreatePasswordSecond.Text;
 
-            Program.UserNamesAndPasswords(createUserName,CreateUserPasswordFirst,CreateUserPasswordSecond);
+            //Program.UserNamesAndPasswords(createUserName,CreateUserPasswordFirst,CreateUserPasswordSecond);
+            Program.CreateUserLogIn(CreateUserName, CreateUserPasswordFirst, CreateUserPasswordSecond);
         }
+
         private void ExitButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
     }
+
 }
