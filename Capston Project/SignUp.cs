@@ -27,8 +27,16 @@ namespace Capston_Project
             String CreateUserPasswordSecond = CreatePasswordSecond.Text;
 
             //Program.UserNamesAndPasswords(createUserName,CreateUserPasswordFirst,CreateUserPasswordSecond);
-            Program.CreateUserLogIn(CreateUserName, CreateUserPasswordFirst, CreateUserPasswordSecond);
+            //CreateUserLogIn(CreateUserName, CreateUserPasswordFirst, CreateUserPasswordSecond);
         }
+        /*public static async Task CreateUserLogIn()
+        {
+            string[] lines =
+            {
+                createUserName,CreateUserPasswordFirst,CreateUserPasswordSecond
+            };
+            await File.WriteAllText("UserLogIn.txt", lines);
+        }*/
 
         private void ExitButton_Click(object sender, EventArgs e)
         {

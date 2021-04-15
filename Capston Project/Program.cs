@@ -28,17 +28,7 @@ namespace Capston_Project
             //might set up for now just store that data
             //readonly(UserPasswordTextBox);
             var FileToCreate = ; //Save file location for updated and edits
-            
-
         }*/
-        public static async Task CreateUserLogIn()
-        {
-            string[] lines =
-            {
-                createUserName,CreateUserPasswordFirst,CreateUserPasswordSecond
-            };
-            await File.WriteAllText("UserLogIn.txt", lines);
-        }
         public static void ViewFile()
          {
              var fileToOpen = "SomeFilePathHere";
@@ -47,7 +37,22 @@ namespace Capston_Project
 
          public static void ReadFiles()
         {
+            int counter = 0;
+            string line;
 
+            // Read the file and display it line by line.  
+            System.IO.StreamReader file =
+                new System.IO.StreamReader(@"c:\test.txt");
+            while ((line = file.ReadLine()) != null)
+            {
+                System.Console.WriteLine(line);
+                counter++;
+            }
+
+            file.Close();
+            System.Console.WriteLine("There were {0} lines.", counter);
+            // Suspend the screen.  
+            System.Console.ReadLine();
         }
         /*public static void encryption()
         {
@@ -73,6 +78,13 @@ namespace Capston_Project
                    //create new text file //new text file made for this demo/project 
                }
            }
+        }*/
+        /*public static void Decryption()
+        {
+            //Readfile
+            //get unicode of current file
+            //reverse the process of encryptinon 
+            //creat and output new file//new file for demo/project
         }*/
     }
 }
