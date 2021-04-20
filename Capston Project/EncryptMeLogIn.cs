@@ -52,6 +52,15 @@ namespace Capston_Project
                     PopUpLogInFailed popUpLogInFailed = new PopUpLogInFailed();
                     popUpLogInFailed.ShowDialog();
                 };
+                if(UserName == "UserDownLoad" && UserPassword == "UserDownLoad")
+                {
+
+                }
+                else
+                {
+                    PopUpLogInFailed popUpLogInFailed = new PopUpLogInFailed();
+                    popUpLogInFailed.ShowDialog();
+                };
             }
              else
             {

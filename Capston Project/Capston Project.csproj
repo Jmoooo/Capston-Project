@@ -70,6 +70,12 @@
     <Compile Include="EncryptMeLogIn.Designer.cs">
       <DependentUpon>EncryptMeLogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="OpenFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenFile.Designer.cs">
+      <DependentUpon>OpenFile.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogInError.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EncryptMeView.resx">
       <DependentUpon>EncryptMeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenFile.resx">
+      <DependentUpon>OpenFile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogInError.resx">
       <DependentUpon>LogInError.cs</DependentUpon>

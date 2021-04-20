@@ -30,7 +30,7 @@ namespace Capston_Project
         private void InitializeComponent()
         {
             this.SignUpTitle = new System.Windows.Forms.Label();
-            this.CreateUserName = new System.Windows.Forms.TextBox();
+            this.CreateUserNameTxt = new System.Windows.Forms.TextBox();
             this.CreatePasswordFirst = new System.Windows.Forms.TextBox();
             this.CreatePasswordSecond = new System.Windows.Forms.TextBox();
             this.ExitButton = new System.Windows.Forms.Button();
@@ -49,12 +49,12 @@ namespace Capston_Project
             this.SignUpTitle.TabIndex = 0;
             this.SignUpTitle.Text = "Sign Up";
             // 
-            // CreateUserName
+            // CreateUserNameTxt
             // 
-            this.CreateUserName.Location = new System.Drawing.Point(228, 90);
-            this.CreateUserName.Name = "CreateUserName";
-            this.CreateUserName.Size = new System.Drawing.Size(100, 20);
-            this.CreateUserName.TabIndex = 1;
+            this.CreateUserNameTxt.Location = new System.Drawing.Point(228, 90);
+            this.CreateUserNameTxt.Name = "CreateUserNameTxt";
+            this.CreateUserNameTxt.Size = new System.Drawing.Size(100, 20);
+            this.CreateUserNameTxt.TabIndex = 1;
             // 
             // CreatePasswordFirst
             // 
@@ -129,7 +129,7 @@ namespace Capston_Project
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.CreatePasswordSecond);
             this.Controls.Add(this.CreatePasswordFirst);
-            this.Controls.Add(this.CreateUserName);
+            this.Controls.Add(this.CreateUserNameTxt);
             this.Controls.Add(this.SignUpTitle);
             this.Name = "SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -142,7 +142,7 @@ namespace Capston_Project
         #endregion
 
         private System.Windows.Forms.Label SignUpTitle;
-        private System.Windows.Forms.TextBox CreateUserName;
+        private System.Windows.Forms.TextBox CreateUserNameTxt;
         private System.Windows.Forms.TextBox CreatePasswordFirst;
         private System.Windows.Forms.TextBox CreatePasswordSecond;
         private System.Windows.Forms.Button ExitButton;

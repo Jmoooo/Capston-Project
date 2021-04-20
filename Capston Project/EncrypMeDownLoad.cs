@@ -26,6 +26,7 @@ namespace Capston_Project
         {
             //download the file or creat new doc of the read file 
             //or create an unencrypted and open that
+            //program.decryption();
         }
     }
 }

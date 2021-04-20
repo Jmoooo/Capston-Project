@@ -21,15 +21,15 @@ namespace Capston_Project
         private void UploadButton_Click(object sender, EventArgs e)
         {
             //find the file
-            Process.Start("explorer.exe");
-            
+            OpenFileDialog OpenFile = new OpenFileDialog();
+            OpenFile.ShowDialog();
             //read to end of file
             //Program.ReadFiles();
             //pass to encrypt 
             //Program.encryption();
+            this.Close();
             EncryptLogIn encryptLogIn = new EncryptLogIn();
             encryptLogIn.ShowDialog();
-            this.Close();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
