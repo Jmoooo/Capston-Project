@@ -24,7 +24,9 @@ namespace Capston_Project
 
         private void DownLoadButton_Click(object sender, EventArgs e)
         {
-            //download the file or creat new doc of the read file 
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.ShowDialog();
+            //Program.Decryption;
             //or create an unencrypted and open that
             //program.decryption();
         }

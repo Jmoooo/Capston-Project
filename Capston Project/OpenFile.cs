@@ -42,7 +42,7 @@ namespace OpenFileDialogueSample
             }
         }
 
-        private void BrowseMultipleButton_Click(object sender, EventArgs e)
+        /*private void BrowseMultipleButton_Click(object sender, EventArgs e)
         {
             this.openFileDialog1.Filter =
         "Images (*.BMP;*.JPG;*.GIF,*.PNG,*.TIFF)|*.BMP;*.JPG;*.GIF;*.PNG;*.TIFF|" +
@@ -81,6 +81,6 @@ namespace OpenFileDialogueSample
         public bool ThumbnailCallback()
         {
             return false;
-        }
+        }*/
     }
 }

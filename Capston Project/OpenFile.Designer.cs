@@ -57,7 +57,7 @@
             this.BrowseMultipleButton.TabIndex = 6;
             this.BrowseMultipleButton.Text = "Browse Multiple Files";
             this.BrowseMultipleButton.UseVisualStyleBackColor = true;
-            this.BrowseMultipleButton.Click += new System.EventHandler(this.BrowseMultipleButton_Click);
+            //this.BrowseMultipleButton.Click += new System.EventHandler(this.BrowseMultipleButton_Click);
             // 
             // textBox1
             // 

@@ -19,7 +19,9 @@ namespace Capston_Project
 
         private void ViewButton_Click(object sender, EventArgs e)
         {
-           // Program.ViewFile();
+            // Program.ViewFile();
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.ShowDialog();
             EncryptLogIn encryptLogIn = new EncryptLogIn();
             encryptLogIn.ShowDialog();
         }

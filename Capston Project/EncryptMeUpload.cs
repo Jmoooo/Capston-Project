@@ -24,7 +24,7 @@ namespace Capston_Project
             OpenFileDialog OpenFile = new OpenFileDialog();
             OpenFile.ShowDialog();
             //read to end of file
-            //Program.ReadFiles();
+            Program.ReadFiles();
             //pass to encrypt 
             //Program.encryption();
             this.Close();

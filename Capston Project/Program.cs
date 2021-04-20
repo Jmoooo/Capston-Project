@@ -20,15 +20,21 @@ namespace Capston_Project
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new EncryptLogIn());
         }
-        /*public static void UserNamesAndPasswords()
+
+        internal static void ReadFiles()
         {
-            //Set to get username and passwords 
-            //get from text box on log in and compare to hash
-            //hash will be stored in text file on hard drive for demo
-            //might set up for now just store that data
-            //readonly(UserPasswordTextBox);
-            var FileToCreate = ; //Save file location for updated and edits
-        }*/
+            throw new NotImplementedException();
+        }
+
+        /*public static void UserNamesAndPasswords()
+{
+   //Set to get username and passwords 
+   //get from text box on log in and compare to hash
+   //hash will be stored in text file on hard drive for demo
+   //might set up for now just store that data
+   //readonly(UserPasswordTextBox);
+   var FileToCreate = ; //Save file location for updated and edits
+}*/
         public static void ViewFile(string text)
          {
              var fileToOpen = "SomeFilePathHere";
