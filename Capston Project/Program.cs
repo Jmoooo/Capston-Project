@@ -37,7 +37,7 @@ namespace Capston_Project
 }*/
         public static void ViewFile(string text)
          {
-             var fileToOpen = "SomeFilePathHere";
+             var fileToOpen = @"C:\";
              var process = Process.Start("notepad.exe");
          }
 
@@ -48,7 +48,7 @@ namespace Capston_Project
 
             // Read the file and display it line by line.  
             System.IO.StreamReader file =
-                new System.IO.StreamReader(@"c:\test.txt");
+                new System.IO.StreamReader(@"c:");
             while ((line = file.ReadLine()) != null)
             {
                 System.Console.WriteLine(line);

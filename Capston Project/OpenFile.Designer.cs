@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.PhotoGallary = new System.Windows.Forms.FlowLayoutPanel();
-            this.BrowseMultipleButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.BrowseButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -39,55 +37,32 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // PhotoGallary
-            // 
-            this.PhotoGallary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.PhotoGallary.Location = new System.Drawing.Point(13, 112);
-            this.PhotoGallary.Margin = new System.Windows.Forms.Padding(4);
-            this.PhotoGallary.Name = "PhotoGallary";
-            this.PhotoGallary.Size = new System.Drawing.Size(660, 314);
-            this.PhotoGallary.TabIndex = 7;
-            // 
-            // BrowseMultipleButton
-            // 
-            this.BrowseMultipleButton.Location = new System.Drawing.Point(500, 64);
-            this.BrowseMultipleButton.Margin = new System.Windows.Forms.Padding(4);
-            this.BrowseMultipleButton.Name = "BrowseMultipleButton";
-            this.BrowseMultipleButton.Size = new System.Drawing.Size(173, 33);
-            this.BrowseMultipleButton.TabIndex = 6;
-            this.BrowseMultipleButton.Text = "Browse Multiple Files";
-            this.BrowseMultipleButton.UseVisualStyleBackColor = true;
-            //this.BrowseMultipleButton.Click += new System.EventHandler(this.BrowseMultipleButton_Click);
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 35);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Location = new System.Drawing.Point(16, 28);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(427, 22);
+            this.textBox1.Size = new System.Drawing.Size(321, 20);
             this.textBox1.TabIndex = 5;
             // 
             // BrowseButton
             // 
-            this.BrowseButton.Location = new System.Drawing.Point(500, 24);
-            this.BrowseButton.Margin = new System.Windows.Forms.Padding(4);
+            this.BrowseButton.Location = new System.Drawing.Point(375, 20);
             this.BrowseButton.Name = "BrowseButton";
-            this.BrowseButton.Size = new System.Drawing.Size(173, 33);
+            this.BrowseButton.Size = new System.Drawing.Size(130, 27);
             this.BrowseButton.TabIndex = 4;
             this.BrowseButton.Text = "Browse";
             this.BrowseButton.UseVisualStyleBackColor = true;
             this.BrowseButton.Click += new System.EventHandler(this.BrowseButton_Click);
             // 
-            // Form1
+            // OpenFile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(743, 451);
-            this.Controls.Add(this.PhotoGallary);
-            this.Controls.Add(this.BrowseMultipleButton);
+            this.ClientSize = new System.Drawing.Size(557, 64);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.BrowseButton);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "OpenFile";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -97,8 +72,6 @@
         #endregion
 
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.FlowLayoutPanel PhotoGallary;
-        private System.Windows.Forms.Button BrowseMultipleButton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button BrowseButton;
     }
