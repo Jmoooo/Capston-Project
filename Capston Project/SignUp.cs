@@ -101,7 +101,15 @@ namespace Capston_Project
             }*/
 
         }
-
+        /*public static void UserNamesAndPasswords()
+        {
+            //Set to get username and passwords 
+            //get from text box on log in and compare to hash
+            //hash will be stored in text file on hard drive for demo
+            //might set up for now just store that data
+            //readonly(UserPasswordTextBox);
+            var FileToCreate = ; //Save file location for updated and edits
+        }*/
         private void ExitButton_Click(object sender, EventArgs e)
         {
             this.Close();

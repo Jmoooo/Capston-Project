@@ -21,22 +21,12 @@ namespace Capston_Project
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new EncryptLogIn());
         }
-
-        /*public static void UserNamesAndPasswords()
-{
-//Set to get username and passwords 
-//get from text box on log in and compare to hash
-//hash will be stored in text file on hard drive for demo
-//might set up for now just store that data
-//readonly(UserPasswordTextBox);
-var FileToCreate = ; //Save file location for updated and edits
-}*/
-        public static void ViewFile(string text)
+        public static void ViewFile(string textbox1)
          {
-             var fileToOpen = @"C:\";
-             var process = Process.Start("notepad.exe");
+            System.IO.StreamReader file =
+               new System.IO.StreamReader(textbox1);
+            var process = Process.Start("notepad.exe",textbox1);
          }
-
          public static void ReadFiles(string textbox1)
         {
             int counter = 0;
@@ -48,14 +38,14 @@ var FileToCreate = ; //Save file location for updated and edits
             while ((line = file.ReadLine()) != null)
             {
                 System.Console.WriteLine(line);
-                Program.Caesar(line,counter);
+                Program.Encrypt(line,counter);
                 counter++;
             }
 
             file.Close();
             System.Console.WriteLine("There were {0} lines.", counter);
         }
-        public static string Caesar(string value, int shift)
+        public static string Encrypt(string value, int shift)
         {
             char[] buffer = value.ToCharArray();
             for (int i = 0; i < buffer.Length; i++)
@@ -80,12 +70,15 @@ var FileToCreate = ; //Save file location for updated and edits
             }
             return new string(buffer);
         }
-         /*public static void encryption(string value)
+        /* public static void encryption(string value)
          {
             char[] buffer = value.ToCharArray();
-            for(char)
+            
+            for(int i = 0; i<buffer.Length;)
             {
-                if(char == "A" || "a")
+                char latter = buffer[i];
+                latter = (char);
+                if(latter == "A" || "a")
                 {
                  char = 1;
                 }

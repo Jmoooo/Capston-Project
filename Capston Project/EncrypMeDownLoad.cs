@@ -44,11 +44,9 @@ namespace Capston_Project
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 textBox1.Text = openFileDialog1.FileName;
-                //SetValueFortextbox1 = textBox1.Text;
-                //Program.ReadFiles(SetValueFortextbox1);
+                Program.ReadFiles(textBox1.Text);
             }
-            //Program.Decryption;
-            //or create an unencrypted and open that
+            this.Close();
             //program.decryption();
         }
     }

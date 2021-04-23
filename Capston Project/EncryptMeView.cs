@@ -19,7 +19,6 @@ namespace Capston_Project
 
         private void ViewButton_Click(object sender, EventArgs e)
         {
-            // Program.ViewFile();
             OpenFileDialog openFileDialog1 = new OpenFileDialog
             {
                 InitialDirectory = @"C:\",
@@ -41,10 +40,12 @@ namespace Capston_Project
             {
                 textBox1.Text = openFileDialog1.FileName;
                 //SetValueFortextbox1 = textBox1.Text;
-                //Program.ReadFiles(SetValueFortextbox1);
+                Program.ReadFiles(textBox1.Text);
+                Program.ViewFile(textBox1.Text);
             }
-            EncryptLogIn encryptLogIn = new EncryptLogIn();
-            encryptLogIn.ShowDialog();
+            this.Close();
+            //EncryptLogIn encryptLogIn = new EncryptLogIn();
+            //encryptLogIn.ShowDialog();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)

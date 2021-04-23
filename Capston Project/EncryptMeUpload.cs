@@ -54,8 +54,6 @@ namespace Capston_Project
             //pass to encrypt 
             //Program.encryption();
             this.Close();
-            EncryptLogIn encryptLogIn = new EncryptLogIn();
-            encryptLogIn.ShowDialog();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
