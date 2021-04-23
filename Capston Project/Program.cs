@@ -1,4 +1,5 @@
 ﻿using System;
+using Capston_Project;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -21,19 +22,14 @@ namespace Capston_Project
             Application.Run(new EncryptLogIn());
         }
 
-        internal static void ReadFiles()
-        {
-            throw new NotImplementedException();
-        }
-
         /*public static void UserNamesAndPasswords()
 {
-   //Set to get username and passwords 
-   //get from text box on log in and compare to hash
-   //hash will be stored in text file on hard drive for demo
-   //might set up for now just store that data
-   //readonly(UserPasswordTextBox);
-   var FileToCreate = ; //Save file location for updated and edits
+//Set to get username and passwords 
+//get from text box on log in and compare to hash
+//hash will be stored in text file on hard drive for demo
+//might set up for now just store that data
+//readonly(UserPasswordTextBox);
+var FileToCreate = ; //Save file location for updated and edits
 }*/
         public static void ViewFile(string text)
          {
@@ -52,15 +48,14 @@ namespace Capston_Project
             while ((line = file.ReadLine()) != null)
             {
                 System.Console.WriteLine(line);
+                //Program.Caesar(line);
                 counter++;
             }
 
             file.Close();
             System.Console.WriteLine("There were {0} lines.", counter);
-            // Suspend the screen.  
-            System.Console.ReadLine();
         }
-        static string Caesar(string value, int shift)
+        public static string Caesar(string value, int shift)
         {
             char[] buffer = value.ToCharArray();
             for (int i = 0; i < buffer.Length; i++)

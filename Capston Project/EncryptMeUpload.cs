@@ -1,4 +1,5 @@
 ﻿using System;
+using Capston_Project;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,14 +18,41 @@ namespace Capston_Project
         {
             InitializeComponent();
         }
+        private void EncryptMeUpload_Load_1(object sender, EventArgs e)
+        {
+            //Encryptlabel1.Text = OpenFileDialog.SetValueFortextbox1;
+        }
 
         private void UploadButton_Click(object sender, EventArgs e)
         {
             //find the file
-            OpenFileDialog OpenFile = new OpenFileDialog();
-            OpenFile.ShowDialog();
+            //OpenFileDialog openFileDialog = new OpenFileDialog();
+            //openFileDialog.ShowDialog();
+            OpenFileDialog openFileDialog1 = new OpenFileDialog
+            {
+                InitialDirectory = @"C:\",
+                Title = "Browse Text Files",
+
+                CheckFileExists = true,
+                CheckPathExists = true,
+
+                DefaultExt = "txt",
+                Filter = "txt files (*.txt)|*.txt",
+                FilterIndex = 2,
+                RestoreDirectory = true,
+
+                ReadOnlyChecked = true,
+                ShowReadOnly = true
+            };
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                textBox1.Text = openFileDialog1.FileName;
+                //SetValueFortextbox1 = textBox1.Text;
+                Program.ReadFiles(textBox1.Text);
+            }
             //read to end of file
-            Program.ReadFiles();
+            //Program.ReadFiles();
             //pass to encrypt 
             //Program.encryption();
             this.Close();

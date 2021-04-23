@@ -24,8 +24,29 @@ namespace Capston_Project
 
         private void DownLoadButton_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.ShowDialog();
+            OpenFileDialog openFileDialog1 = new OpenFileDialog
+            {
+                InitialDirectory = @"C:\",
+                Title = "Browse Text Files",
+
+                CheckFileExists = true,
+                CheckPathExists = true,
+
+                DefaultExt = "txt",
+                Filter = "txt files (*.txt)|*.txt",
+                FilterIndex = 2,
+                RestoreDirectory = true,
+
+                ReadOnlyChecked = true,
+                ShowReadOnly = true
+            };
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                textBox1.Text = openFileDialog1.FileName;
+                //SetValueFortextbox1 = textBox1.Text;
+                //Program.ReadFiles(SetValueFortextbox1);
+            }
             //Program.Decryption;
             //or create an unencrypted and open that
             //program.decryption();

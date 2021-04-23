@@ -33,6 +33,7 @@ namespace Capston_Project
             this.UploadButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // UpLoadTitleEncryptMe
@@ -73,17 +74,26 @@ namespace Capston_Project
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(346, 413);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 4;
+            // 
             // EncryptMeUpload
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.UploadButton);
             this.Controls.Add(this.UpLoadTitleEncryptMe);
             this.Name = "EncryptMeUpload";
             this.Text = "EncryptMeUpload";
+            this.Load += new System.EventHandler(this.EncryptMeUpload_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,5 +105,6 @@ namespace Capston_Project
         private System.Windows.Forms.Button UploadButton;
         private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
