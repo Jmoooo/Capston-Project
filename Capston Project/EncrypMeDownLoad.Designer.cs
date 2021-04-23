@@ -1,7 +1,7 @@
 ﻿
 namespace Capston_Project
 {
-    partial class EncryptMeUpload
+    partial class EncrypMeDownLoad
     {
         /// <summary>
         /// Required designer variable.
@@ -29,35 +29,35 @@ namespace Capston_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.UpLoadTitleEncryptMe = new System.Windows.Forms.Label();
-            this.UploadButton = new System.Windows.Forms.Button();
+            this.EncryptMeTitle = new System.Windows.Forms.Label();
+            this.DownLoadButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // UpLoadTitleEncryptMe
+            // EncryptMeTitle
             // 
-            this.UpLoadTitleEncryptMe.AutoSize = true;
-            this.UpLoadTitleEncryptMe.Location = new System.Drawing.Point(343, 25);
-            this.UpLoadTitleEncryptMe.Name = "UpLoadTitleEncryptMe";
-            this.UpLoadTitleEncryptMe.Size = new System.Drawing.Size(61, 13);
-            this.UpLoadTitleEncryptMe.TabIndex = 0;
-            this.UpLoadTitleEncryptMe.Text = "Encrypt Me";
+            this.EncryptMeTitle.AutoSize = true;
+            this.EncryptMeTitle.Location = new System.Drawing.Point(358, 30);
+            this.EncryptMeTitle.Name = "EncryptMeTitle";
+            this.EncryptMeTitle.Size = new System.Drawing.Size(61, 13);
+            this.EncryptMeTitle.TabIndex = 0;
+            this.EncryptMeTitle.Text = "Encrypt Me";
             // 
-            // UploadButton
+            // DownLoadButton
             // 
-            this.UploadButton.Location = new System.Drawing.Point(604, 398);
-            this.UploadButton.Name = "UploadButton";
-            this.UploadButton.Size = new System.Drawing.Size(75, 23);
-            this.UploadButton.TabIndex = 1;
-            this.UploadButton.Text = "Upload";
-            this.UploadButton.UseVisualStyleBackColor = true;
-            this.UploadButton.Click += new System.EventHandler(this.UploadButton_Click);
+            this.DownLoadButton.Location = new System.Drawing.Point(632, 415);
+            this.DownLoadButton.Name = "DownLoadButton";
+            this.DownLoadButton.Size = new System.Drawing.Size(75, 23);
+            this.DownLoadButton.TabIndex = 1;
+            this.DownLoadButton.Text = "DownLoad";
+            this.DownLoadButton.UseVisualStyleBackColor = true;
+            this.DownLoadButton.Click += new System.EventHandler(this.DownLoadButton_Click);
             // 
             // ExitButton
             // 
-            this.ExitButton.Location = new System.Drawing.Point(685, 398);
+            this.ExitButton.Location = new System.Drawing.Point(713, 415);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(75, 23);
             this.ExitButton.TabIndex = 2;
@@ -68,20 +68,20 @@ namespace Capston_Project
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 41);
+            this.listView1.Location = new System.Drawing.Point(12, 46);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(748, 351);
+            this.listView1.Size = new System.Drawing.Size(776, 363);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(346, 413);
+            this.textBox1.Location = new System.Drawing.Point(315, 417);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 4;
             // 
-            // EncryptMeUpload
+            // EncrypMeDownLoad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -89,11 +89,10 @@ namespace Capston_Project
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.ExitButton);
-            this.Controls.Add(this.UploadButton);
-            this.Controls.Add(this.UpLoadTitleEncryptMe);
-            this.Name = "EncryptMeUpload";
-            this.Text = "EncryptMeUpload";
-            this.Load += new System.EventHandler(this.EncryptMeUpload_Load_1);
+            this.Controls.Add(this.DownLoadButton);
+            this.Controls.Add(this.EncryptMeTitle);
+            this.Name = "EncrypMeDownLoad";
+            this.Text = "EncrypMeDownLoad";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,8 +100,8 @@ namespace Capston_Project
 
         #endregion
 
-        private System.Windows.Forms.Label UpLoadTitleEncryptMe;
-        private System.Windows.Forms.Button UploadButton;
+        private System.Windows.Forms.Label EncryptMeTitle;
+        private System.Windows.Forms.Button DownLoadButton;
         private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.TextBox textBox1;

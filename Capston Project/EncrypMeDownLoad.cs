@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Capston_Project
 {
-    public partial class EncryptMeView : Form
+    public partial class EncrypMeDownLoad : Form
     {
-        public EncryptMeView()
+        public EncrypMeDownLoad()
         {
             InitializeComponent();
         }
 
-        private void ViewButton_Click(object sender, EventArgs e)
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void DownLoadButton_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog
             {
@@ -39,18 +44,10 @@ namespace Capston_Project
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 textBox1.Text = openFileDialog1.FileName;
-                //SetValueFortextbox1 = textBox1.Text;
                 Program.ReadFiles(textBox1.Text);
-                Program.ViewFile(textBox1.Text);
             }
             this.Close();
-            //EncryptLogIn encryptLogIn = new EncryptLogIn();
-            //encryptLogIn.ShowDialog();
-        }
-
-        private void ExitButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            //program.decryption();
         }
     }
 }

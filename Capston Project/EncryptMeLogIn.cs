@@ -32,9 +32,6 @@ namespace Capston_Project
                 {
                     EncryptMeUpload encryptMeUpload = new EncryptMeUpload();
                     encryptMeUpload.ShowDialog();
-                    EncryptLogIn encryptLogIn = new EncryptLogIn();
-                    encryptLogIn.Close();
-
                 }
                 else
                 {
@@ -45,7 +42,16 @@ namespace Capston_Project
                 {
                     EncryptMeView encryptMeView = new EncryptMeView();
                     encryptMeView.ShowDialog();
-                    this.Close();
+                }
+                else
+                {
+                    PopUpLogInFailed popUpLogInFailed = new PopUpLogInFailed();
+                    popUpLogInFailed.ShowDialog();
+                };
+                if(UserName == "UserDownLoad" && UserPassword == "UserDownLoad")
+                {
+                    EncrypMeDownLoad encrypMeDownLoad = new EncrypMeDownLoad();
+                    encrypMeDownLoad.ShowDialog();
                 }
                 else
                 {
