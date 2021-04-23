@@ -37,14 +37,14 @@ var FileToCreate = ; //Save file location for updated and edits
              var process = Process.Start("notepad.exe");
          }
 
-         public static void ReadFiles(string filetoopen)
+         public static void ReadFiles(string textbox1)
         {
             int counter = 0;
             string line;
 
             // Read the file and display it line by line.  
             System.IO.StreamReader file =
-                new System.IO.StreamReader(@"c:");
+                new System.IO.StreamReader(textbox1);
             while ((line = file.ReadLine()) != null)
             {
                 System.Console.WriteLine(line);

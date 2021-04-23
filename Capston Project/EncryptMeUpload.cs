@@ -48,11 +48,9 @@ namespace Capston_Project
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 textBox1.Text = openFileDialog1.FileName;
-                //SetValueFortextbox1 = textBox1.Text;
+                //read to end of fill
                 Program.ReadFiles(textBox1.Text);
             }
-            //read to end of file
-            //Program.ReadFiles();
             //pass to encrypt 
             //Program.encryption();
             this.Close();
