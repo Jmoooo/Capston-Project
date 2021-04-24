@@ -44,7 +44,7 @@ namespace Capston_Project
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 textBox1.Text = openFileDialog1.FileName;
-                Program.ReadFiles(textBox1.Text);
+                Program.ReadFilesDEcript(textBox1.Text);
             }
             this.Close();
             //program.decryption();
