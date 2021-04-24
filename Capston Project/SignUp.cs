@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Capston_Project
 {
@@ -28,10 +29,12 @@ namespace Capston_Project
             if(CreatePasswordFirst.Text == CreatePasswordSecond.Text)
             {
                 UserPassword = CreatePasswordSecond.Text;
+                StreamWriter sw = new StreamWriter("C:\\Users\\jcmor\\OneDrive\\Documents\\encryptmelogin.txt");
+                sw.WriteLine(UserName);
+                sw.WriteLine(UserPassword);
+                var process = Process.Start("notepad.exe","encryptmelogin.txt");
             }
-            StreamWriter sw = new StreamWriter("C:\\Users\\jcmor\\OneDrive\\Documents\\encryptmelogin.txt");
-            sw.WriteLine(UserName);
-            sw.WriteLine(UserPassword);
+            
 
 
 
