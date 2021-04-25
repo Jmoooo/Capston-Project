@@ -34,25 +34,6 @@ namespace Capston_Project
                 sw.WriteLine(UserPassword);
                 var process = Process.Start("notepad.exe","encryptmelogin.txt");
             }
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             //string createUserName = CreateUserName.Text;
             //string CreateUserPasswordFirst = CreatePasswordFirst.Text;
             //string CreateUserPasswordSecond = CreatePasswordSecond.Text;
@@ -81,7 +62,6 @@ namespace Capston_Project
                 br.Close();
             }
         }
-
         class Test
         {
             static void Main()
