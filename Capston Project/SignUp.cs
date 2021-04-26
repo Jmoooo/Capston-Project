@@ -4,11 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using Capston_Project;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Capston_Project
 {
@@ -22,11 +24,20 @@ namespace Capston_Project
 
         private void CreatUserIdsButton_Click(object sender, EventArgs e)
         {
+            string UserName = CreateUserNameTxt.Text;
+            string UserPassword;
+            if(CreatePasswordFirst.Text == CreatePasswordSecond.Text)
+            {
+                UserPassword = CreatePasswordSecond.Text;
+                StreamWriter sw = new StreamWriter("C:\\Users\\jcmor\\OneDrive\\Documents\\encryptmelogin.txt");
+                sw.WriteLine(UserName);
+                sw.WriteLine(UserPassword);
+                var process = Process.Start("notepad.exe","encryptmelogin.txt");
+            }
             //string createUserName = CreateUserName.Text;
             //string CreateUserPasswordFirst = CreatePasswordFirst.Text;
             //string CreateUserPasswordSecond = CreatePasswordSecond.Text;
             //CreateUserLogIn(CreatePasswordFirst, CreatePasswordSecond);
-
             //Program.UserNamesAndPasswords(createUserName,CreateUserPasswordFirst,CreateUserPasswordSecond);
             //CreateUserLogIn(CreateUserName, CreateUserPasswordFirst, CreateUserPasswordSecond);
         }
@@ -51,7 +62,6 @@ namespace Capston_Project
                 br.Close();
             }
         }
-
         class Test
         {
             static void Main()

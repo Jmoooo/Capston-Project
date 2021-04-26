@@ -40,7 +40,6 @@ namespace Capston_Project
             {
                 textBox1.Text = openFileDialog1.FileName;
                 //SetValueFortextbox1 = textBox1.Text;
-                Program.ReadFiles(textBox1.Text);
                 Program.ViewFile(textBox1.Text);
             }
             this.Close();

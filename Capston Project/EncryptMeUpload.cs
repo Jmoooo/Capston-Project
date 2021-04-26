@@ -49,7 +49,7 @@ namespace Capston_Project
             {
                 textBox1.Text = openFileDialog1.FileName;
                 //read to end of fill
-                Program.ReadFiles(textBox1.Text);
+                Program.ReadFilesEncript(textBox1.Text);
             }
             //pass to encrypt 
             //Program.encryption();
