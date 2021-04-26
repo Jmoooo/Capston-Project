@@ -28,7 +28,7 @@ namespace Capston_Project
             string UserPassword = UserPasswordTextBox.Text;
              if (UserName.Length >=8 && UserPassword.Length >=8)
             {
-                if (UserName == "UploadUser" && UserPassword == "UploadUser")
+                if (UserName == "UserEncrypt" && UserPassword == "UserEncrypt")
                 {
                     EncryptMeUpload encryptMeUpload = new EncryptMeUpload();
                     encryptMeUpload.ShowDialog();
@@ -48,7 +48,7 @@ namespace Capston_Project
                     PopUpLogInFailed popUpLogInFailed = new PopUpLogInFailed();
                     popUpLogInFailed.ShowDialog();
                 };
-                if(UserName == "UserDownLoad" && UserPassword == "UserDownLoad")
+                if(UserName == "UserDecrypt" && UserPassword == "UserDecrypt")
                 {
                     EncrypMeDownLoad encrypMeDownLoad = new EncrypMeDownLoad();
                     encrypMeDownLoad.ShowDialog();
